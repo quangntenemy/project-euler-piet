@@ -49,7 +49,7 @@ The emphasis is not simply on obtaining the correct numerical answers. It is on 
 
 ## Project Structure
 
-The repository is expected to evolve as the project develops.
+The repository is organized around individual Project Euler problems.
 
 ```text
 project-euler-piet/
@@ -58,21 +58,23 @@ project-euler-piet/
 ├── docs/
 │   ├── piet-internals.md
 │   └── development-notes.md
-├── solutions/
-│   ├── 001-010/
-│   ├── 011-020/
-│   ├── 021-030/
-│   ├── ...
-│   └── 091-100/
+├── problems/
+│   ├── 001/
+│   │   ├── README.md
+│   │   ├── problem-001-piet.png
+│   │   └── problem-001-command-trace.txt
+│   ├── 002/
+│   ├── 003/
+│   └── ...
 └── tests/
-    └── Solution verification notes
+    └── verification-notes.md
 ```
 
-A Java-based Piet interpreter and supporting development tools are planned as future additions.
+The structure may evolve as the project develops. A Java-based Piet interpreter and supporting development tools are planned as future additions.
 
 ## Solutions
 
-Each problem will have its own directory containing, where applicable:
+Each problem has its own directory containing, where applicable:
 
 - **Piet program:** The actual executable image.
 - **Artwork concept:** The visual idea, composition, or inspiration behind the image.
@@ -83,26 +85,31 @@ Each problem will have its own directory containing, where applicable:
 
 Project Euler problem statements will not be reproduced here. Each solution will link to its corresponding original problem.
 
+### Progress
+
 | Range | Status |
 |---|---|
-| Problems 1–10 | Planned |
-| Problems 11–20 | Planned |
-| Problems 21–30 | Planned |
-| Problems 31–40 | Planned |
-| Problems 41–50 | Planned |
-| Problems 51–60 | Planned |
-| Problems 61–70 | Planned |
-| Problems 71–80 | Planned |
-| Problems 81–90 | Planned |
-| Problems 91–100 | Planned |
+| Problem 001 | Initial implementation — verification pending |
+| Problems 002–010 | Planned |
+| Problems 011–020 | Planned |
+| Problems 021–030 | Planned |
+| Problems 031–040 | Planned |
+| Problems 041–050 | Planned |
+| Problems 051–060 | Planned |
+| Problems 061–070 | Planned |
+| Problems 071–080 | Planned |
+| Problems 081–090 | Planned |
+| Problems 091–100 | Planned |
+
+An initial implementation is an experiment, not a completed solution. A problem is considered complete only when its Piet program has been executed and verified against the expected result.
 
 ## Development and Verification
 
 At this stage, Piet programs are verified using the online Piet interpreter:
 
-[https://piet.gulla.net/](https://piet.gulla.net/)
+[Piet Online Interpreter](https://piet.gulla.net/)
 
-Each completed program should be tested through this interpreter to confirm that it executes and produces the expected result.
+Each completed program must be tested through this interpreter to confirm that it executes and produces the expected result.
 
 A dedicated Java-based Piet interpreter is a future target. It is not a prerequisite for the initial solutions.
 
