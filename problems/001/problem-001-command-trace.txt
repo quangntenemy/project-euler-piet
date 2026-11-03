@@ -1,0 +1,33 @@
+Problem 001 Piet command trace
+Codel size: 1
+Start DP: right
+Start CC: left
+
+Transition | Command
+-----------|--------
+1          | push 3
+2          | push 333
+3          | multiply
+4          | push 334
+5          | multiply
+6          | push 2
+7          | divide
+8          | push 5
+9          | push 199
+10         | multiply
+11         | push 200
+12         | multiply
+13         | push 2
+14         | divide
+15         | add
+16         | push 15
+17         | push 66
+18         | multiply
+19         | push 67
+20         | multiply
+21         | push 2
+22         | divide
+23         | subtract
+24         | out(number)
+
+Expected output: 233168
